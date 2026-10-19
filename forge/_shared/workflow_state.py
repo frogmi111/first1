@@ -386,6 +386,19 @@ def sync_from_spec(state: dict[str, Any], spec: dict[str, Any], current_pass: st
         if isinstance(entry, dict) and entry.get("passId") == current_pass
     ]
     latest_action = current_pass_reviews[-1].get("action") if current_pass_reviews else None
+    # A persisted cursor may already have consumed a stop under an older workflow.
+    # Recheck the authoritative ledger (not just new_reviews), excluding deliberate
+    # out-of-sequence notes, so resume cannot quietly bypass the stop decision.
+    latest_in_sequence_action = next(
+        (
+            entry.get("action")
+            for entry in reversed(history)
+            if isinstance(entry, dict)
+            and entry.get("passId") == current_pass
+            and entry.get("outOfSequence") is not True
+        ),
+        None,
+    )
     refinements = [
         entry
         for entry in current_pass_reviews
@@ -417,7 +430,7 @@ def sync_from_spec(state: dict[str, Any], spec: dict[str, Any], current_pass: st
     loops["perPass"] = per_pass
     loops["total"] = total
     pass_count = per_pass.get(current_pass, 0)
-    if current_pass != "complete" and latest_action == "stop":
+    if current_pass != "complete" and latest_in_sequence_action == "stop":
         state["status"] = "stopped"
         state["currentStep"] = "stopped"
         state["stopReason"] = f"review-action-stop:{current_pass}"
