@@ -209,6 +209,46 @@ class WorkflowStateTest(unittest.TestCase):
         self.assertEqual(payload["stopReason"], "review-action-stop:blockout")
         self.assertIsNone(payload["nextCommand"])
 
+    def test_old_cursor_does_not_hide_stop_review(self):
+        state = new_state("reference.png")
+        set_current_pass(state, "blockout")
+        # Simulate a state file that already consumed this review before the fix.
+        state["reviewCursor"] = 1
+        sync_from_spec(
+            state,
+            {"reviewHistory": [{"passId": "blockout", "action": "stop"}]},
+            "blockout",
+        )
+        payload = status_payload(state)
+        self.assertEqual(payload["status"], "stopped")
+        self.assertEqual(payload["stopReason"], "review-action-stop:blockout")
+
+    def test_out_of_sequence_stop_does_not_stop_active_pass(self):
+        state = new_state("reference.png")
+        set_current_pass(state, "blockout")
+        sync_from_spec(
+            state,
+            {"reviewHistory": [{"passId": "blockout", "action": "stop", "outOfSequence": True}]},
+            "blockout",
+        )
+        payload = status_payload(state)
+        self.assertEqual(payload["status"], "active")
+        self.assertIsNone(payload["stopReason"])
+
+    def test_latest_in_sequence_action_controls_stop_after_cursor_advance(self):
+        state = new_state("reference.png")
+        set_current_pass(state, "blockout")
+        history = [
+            {"passId": "blockout", "action": "stop"},
+            {"passId": "blockout", "action": "continue"},
+            {"passId": "blockout", "action": "stop", "outOfSequence": True},
+        ]
+        state["reviewCursor"] = len(history)
+        sync_from_spec(state, {"reviewHistory": history}, "blockout")
+        payload = status_payload(state)
+        self.assertEqual(payload["status"], "active")
+        self.assertIsNone(payload["stopReason"])
+
     def test_next_cli_returns_stopped_for_stop_review(self):
         with tempfile.TemporaryDirectory() as directory:
             state_path = Path(directory) / "state.json"
