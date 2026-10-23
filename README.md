@@ -51,28 +51,27 @@ Every model in the gallery is generated code, running in your browser. No mesh f
 
 Reconstructions built entirely from primitives, procedural shaders, and generated geometry. Open any model to orbit it, inspect its reference, and read the generated source.
 
+<!-- showcase:start -->
 | Demo | Subject | Built with | View | Source |
 | --- | --- | --- | --- | --- |
-| Dual-Sword Warrior — TypeScript procedural surfaces ⚠︎ | character | `v1.5.1` | [Live](https://img2threejs.io/#/demo/girl-character) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/girl-character/createGirlCharacterModel.ts) |
-| Low-Poly Humanoid — Rigged Character ⚠︎ | character | `v1.5.0` | [Live](https://img2threejs.io/#/demo/low-poly-humanoid) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/low-poly-humanoid/createLowPolyHumanoidModel.ts) |
+| Tropical Island — Code-only Diorama | object | — | [Live](https://img2threejs.io/#/demo/tropical-island) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/tropical-island/createTropicalIslandModel.ts) |
+| Man Robot · Segment Color Studio | character | — | [Live](https://img2threejs.io/#/demo/man-robot-studio) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/man-robot-studio/robotModel.ts) |
+| Snowbound Crossing — Mini Game | object | — | [Live](https://img2threejs.io/#/demo/snowy-village) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/snowy-village/createSnowyVillageModel.ts) |
+| Ocean Blue PRS Guitar — Measured Surface Flow | object | `v1.5.2` | [Live](https://img2threejs.io/#/demo/prs-ocean) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/prs-ocean/createPrsOceanModel.ts) |
+| Groot — Heart of the Forest | character | `v1.5.2` | [Live](https://img2threejs.io/#/demo/monster-tree) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/monster-tree/createMonsterTreeModel.ts) |
+| Raz — Detonating Strike VFX | character | `v1.5.2` | [Live](https://img2threejs.io/#/demo/raz) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/raz/razVfx.ts) |
+| Starship + Super Heavy | object | `v1.2.0` | [Live](https://img2threejs.io/#/demo/starship-super-heavy) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/starship-super-heavy/createStarshipSuperHeavyModel.ts) |
+| Mars Cat — Measured Procedural Surfaces | character | `v1.5.1` | [Live](https://img2threejs.io/#/demo/mars-cat) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/mars-cat/createMarsCatModel.ts) |
+| Lee Sin — Game Character | character | `v1.5.1` | [Live](https://img2threejs.io/#/demo/leesin) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/leesin/createLeesinModel.ts) |
+| Dual-Sword Warrior — Procedural Character | character | `v1.5.1` | [Live](https://img2threejs.io/#/demo/girl-character-3) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/girl-character-3/createGirlCharacter3Model.ts) |
+| AWP \| Medusa (Minimal Wear) · V2 rebuild | object | `v1.4.4` | [Live](https://img2threejs.io/#/demo/awp-medusa-v2) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/awp-medusa-v2/createAwpMedusaModelV2.ts) |
 | ★ Talon Knife \| Doppler Ruby (Factory New) | object | `v1.4.4` | [Live](https://img2threejs.io/#/demo/talon-doppler-ruby) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/talon-doppler-ruby/createTalonDopplerRubyModel.ts) |
-| AWP \| Medusa (Minimal Wear) · V2 rebuild | object | `V2` | [Live](https://img2threejs.io/#/demo/awp-medusa-v2) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/awp-medusa-v2/createAwpMedusaModelV2.ts) |
-| Pikachu 10K Star Celebration ⚠︎ | character | `v1.5-beta` | [Live](https://img2threejs.io/#/demo/electric-mouse-mascot) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/electric-mouse-mascot/createElectricMouseMascotModel.ts) |
-| Glock-18 \| Ghost Protocol (Well-Worn) | object | `v1.4.1` | [Live](https://img2threejs.io/#/demo/glock-ghost-protocol) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/glock-ghost-protocol/createGlockGhostProtocolModel.ts) |
-| Classic Knife \| Fade (Minimal Wear) | object | `v1.3` | [Live](https://img2threejs.io/#/demo/classic-fade) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/classic-fade/createClassicFadeModel.ts) |
-| BMX Endurance Bike | object | `v1.3` | [Live](https://img2threejs.io/#/demo/bmx-endurance) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/bmx-endurance/createBmxEnduranceBikeModel.ts) |
-| M9 Bayonet \| Doppler Phase 2 | object | `v1.3` | [Live](https://img2threejs.io/#/demo/m9-doppler) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/m9-doppler/createM9DopplerModel.ts) |
-| Sony WF-1000XM3 Earbuds + Case | object | `v1.2` | [Live](https://img2threejs.io/#/demo/sony-wf1000xm3) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/sony-wf1000xm3/createSonyWf1000xm3Model.ts) |
-| ISSACA 12 Gauge Shotgun | object | `v1.2` | [Live](https://img2threejs.io/#/demo/issaca-shotgun) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/issaca-shotgun/createIssacaShotgunModel.ts) |
-| Gerber Paracord Knife | object | `v1.2` | [Live](https://img2threejs.io/#/demo/gerber-knife) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/gerber-knife/createGerberKnifeModel.ts) |
-| Doraemon House (isometric diorama) | object | `v1.2` | [Live](https://img2threejs.io/#/demo/doraemon-house) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/doraemon-house/createDoraemonHouseModel.ts) |
-| War-Hauler "SECTOR 07" | object | `v1.2` | [Live](https://img2threejs.io/#/demo/warhauler) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/warhauler/createWarHaulerModel.ts) |
-| Crowned Loot Chest ⚠︎ | object | `v1.2` | [Live](https://img2threejs.io/#/demo/crown-chest) | [code](https://github.com/img2threejs/img2threejs-showcase/blob/main/src/demos/crown-chest/createCrownChestModel.ts) |
+<!-- showcase:end -->
 
-⚠︎ marks a demo whose registry `status` is still `placeholder` rather than `final` — it renders, but it
-is not finished work. The **Built with** column is the version each demo's own registry entry records in
-`generatedWith`, not an inference from dates; `awp-medusa-v2` records `V2`, which is that demo's rebuild
-pass rather than a release number. Rows are ordered newest first by the commit that added the demo.
+The newest finished demos, generated from the gallery's
+[`demos.json`](https://img2threejs.io/demos.json) by `scripts/ci/showcase_table.py`. The gallery
+also has work in progress. **Built with** is the version tag in each demo's own `generatedWith`
+record (— when it names none).
 
 The gallery source lives in [img2threejs/img2threejs-showcase](https://github.com/img2threejs/img2threejs-showcase). If this project is useful, a star on this repo helps others find it.
 
@@ -82,7 +81,7 @@ The gallery source lives in [img2threejs/img2threejs-showcase](https://github.co
 
 You give it one reference image of an object. It produces a `THREE.Group` factory written in TypeScript that recreates that object from primitives, procedural shaders, and generated geometry — with a runtime hierarchy (pivots, sockets, colliders) so the result is ready to animate, not an inert lump.
 
-It runs under Claude Code, Codex, or OpenCode. It is agent-agnostic: wherever the docs say "agent vision" or "agent browser tool", it uses whatever the host provides — native image reading, a browser MCP, the project preview, or a user-supplied screenshot.
+It runs under Hermes, Claude Code, Codex, or OpenCode. It is agent-agnostic: wherever the docs say "agent vision" or "agent browser tool", it uses whatever the host provides — native image reading, a browser MCP, the project preview, or a user-supplied screenshot.
 
 ### Subjects and detail accuracy
 
@@ -99,9 +98,6 @@ It runs under Claude Code, Codex, or OpenCode. It is agent-agnostic: wherever th
 
 ## How it works
 
-A staged sculpting pipeline turns the reference image into a spec, then generates and vision-reviews one build pass at a time — `blockout → structural → form → material → surface → lighting → interaction → optimization` — self-correcting until every identity-defining feature clears its threshold.
-
-**→ Full pipeline diagram, gates, self-correction logic, and the token-efficiency design: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**
 A staged sculpting pipeline turns the reference image into a spec, then generates and vision-reviews one build pass at a time — `blockout → structural → form → material → surface → lighting → interaction → optimization` — self-correcting until every identity-defining feature clears its threshold. Deterministic Python scripts handle validation and gating; model tokens are spent only on visual judgment and code.
 
 **→ Full pipeline diagram, gates, self-correction logic, script reference, and the token-efficiency design: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**
@@ -110,64 +106,127 @@ A staged sculpting pipeline turns the reference image into a spec, then generate
 
 ## Quick start
 
-1. **Install** — place this folder in your skills directory:
+Needs **Node.js ≥ 18, Git and Python ≥ 3.10**, and one of Claude Code, Codex, OpenCode or Hermes.
 
-   ```bash
-   git clone https://github.com/img2threejs/img2threejs.git ~/.claude/skills/img2threejs
-   ```
+### 1. Install the base skill
 
-   If you use more than one host, keep a single checkout and point each entrypoint at it as a
-   symlink, so they cannot drift apart:
+```bash
+npx --yes img2threejs@latest install   # links the skill into every agent it finds
+npx --yes img2threejs@latest doctor    # one line per agent: "managed" means installed
+```
 
-   ```text
-   ~/.claude/skills/img2threejs -> <your checkout>
-   ~/.codex/skills/img2threejs  -> <your checkout>
-   ```
+**Hermes users**, also link the skill into your profile (the installer only writes `~/.hermes/skills/`):
 
-2. **Add domain plugins (optional)** — domain knowledge (CS2 skins today) lives in installed
-   plugins, not in this checkout. Install the [img2 harness](https://github.com/img2threejs/img2)
-   once, then add plugins to it:
+```bash
+ln -sfn ~/.hermes/skills/img2threejs ~/.hermes/profiles/${HERMES_ACTIVE_PROFILE:-img2threejs}/skills/img2threejs
+```
 
-   ```bash
-   npx github:img2threejs/img2 install   # ~/.img2, the plugin registry, and an `img2` launcher
-   img2 add img2threejs/plugin-cs2       # clone @ newest tag, pin SHA, link host skills
-   img2 doctor                           # fail-loud static audit of every installed plugin
-   ```
+Then **restart your agent** and go to [step 4](#4-run-a-reconstruction-in-your-agent). Prefer to let
+your agent install it, want a manual or single-agent install, or something failed:
+[`docs/INSTALL.md`](docs/INSTALL.md) (paste-to-agent prompt, expected output, troubleshooting,
+update and uninstall, other agents such as Cursor).
 
-   An installed domain plugin contributes its own checklist steps, evidence collection, spec
-   augmentation (quality floors merge raise-only), and a blocking review gate — and registers its
-   profile with `forge/state.py init --profile <id>`. With no plugins installed, `generic`,
-   and `character` are available; a profile whose plugin is missing (`cs2`, `animated-character`) fails
-   loud naming what is installed, never silently downgrades. `img2 remove <id>` reverses cleanly.
+### 2. Install the plugin harness, if needed
 
-   **Official plugins:**
+Skip this unless you need a plugin from the table below. Plugins come from a separate CLI, the
+`img2` harness (`~/.img2`); install it once:
 
-   | Plugin | Adds | Install |
-   |---|---|---|
-   | [plugin-cs2](https://github.com/img2threejs/plugin-cs2) | `cs2` profile — CS2 weapon-skin reconstruction: family adapters, finish rules, domain review gate | `img2 add img2threejs/plugin-cs2` |
-   | [plugin-character](https://github.com/img2threejs/plugin-character) | `animated-character` profile — everything `character` has plus the Stage R rigging/animation gates | `img2 add img2threejs/plugin-character` |
-   | [plugin-img2glb](https://github.com/img2threejs/plugin-img2glb) | `image → glb` emission target via the hosted TRELLIS space | `img2 add img2threejs/plugin-img2glb` |
-   | [plugin-hello-cube](https://github.com/img2threejs/plugin-hello-cube) | minimal reference plugin — copy it to write your own | `img2 add img2threejs/plugin-hello-cube` |
+```bash
+npx --yes @img2threejs/img2@latest install --yes
+npx --yes @img2threejs/img2@latest plugins       # the live catalog
+```
 
-   Writing your own: the harness repo's
-   [docs/WRITING_A_PLUGIN.md](https://github.com/img2threejs/img2/blob/main/docs/WRITING_A_PLUGIN.md).
+It links an `img2` command if `~/.local/bin`, `/opt/homebrew/bin` or `/usr/local/bin` is on your
+`PATH`; otherwise use the `npx --yes @img2threejs/img2@latest` form, or
+`alias img2='npx --yes @img2threejs/img2@latest'`. What it changes on your machine:
+[`docs/INSTALL.md` §3](docs/INSTALL.md#3-add-a-plugin-only-if-you-need-one).
 
-3. **Invoke** — in Claude Code, attach or point to an object image and run:
+### 3. Choose plugins — do not install everything by default
 
-   ```
-   /img2threejs Rebuild this object as a Three.js model, keep the proportions, angles, and colours.
-   ```
+<!-- plugins:start -->
+| Plugin / source README | Adds | Access | Install after harness setup |
+|---|---|---|---|
+| [character](https://github.com/img2threejs/plugin-character) | Character rigging and animation: skeleton from a GLB, skin conditioning, clip measurement, action design, and a twelve-check rig gate. | Public | `img2 add character --yes` |
+| [cs2](https://github.com/img2threejs/plugin-cs2) | Counter-Strike 2 weapon and glove skin reconstruction: intake contract, authoritative classification, finish/material recipes, and a blocking review gate. | Public | `img2 add cs2 --yes` |
+| [environment](https://github.com/img2threejs/plugin-environment) | Install and manage the private img2 environment plugin through the img2 harness. Authorized GitHub access is required. | **Private — authorized Git access required** | `img2 add environment --yes` |
+| [hello-cube](https://github.com/img2threejs/plugin-hello-cube) | Turn an image into a deterministic Three.js cube (contract exerciser) | Public | `img2 add hello-cube --yes` |
+| [img2glb](https://github.com/img2threejs/plugin-img2glb) | Turn an image into a GLB 3D mesh via the hosted TRELLIS space | Public | `img2 add img2glb --yes` |
+<!-- plugins:end -->
 
-   That is enough: the skill classifies the subject, runs the detail inventory, and gates every pass on its own.
+The table above is generated from the live catalog (`scripts/ci/plugin_table.py`); list all
+plugins with `img2 plugins`. Open each plugin's linked README for its input requirements,
+dependencies and tool setup. Example (the `cs2` plugin; substitute any catalog id):
 
-4. **Follow the pipeline** — the skill validates the image, writes an assessment and spec, generates the factory pass by pass, and shows you a side-by-side comparison at each step until the render matches.
+```bash
+img2 add cs2 --yes
+img2 list
+img2 doctor
+img2 sync --check
+```
 
-   For a multi-session reconstruction, create a local state index first:
+An installed domain plugin contributes its checklist steps, evidence collection, spec
+augmentation (quality floors merge raise-only), and blocking review gates. With no plugins
+installed, the base has `generic` and `character` profiles. A profile whose plugin is
+missing (`cs2`, `animated-character`) fails loud naming what is installed; it never silently
+downgrades. The base skill is not a plugin: **do not use `img2 add` to install this repository.**
 
-   ```bash
-   python3 forge/state.py init --reference <image> --profile character --spec object-sculpt-spec.json
-   python3 forge/next.py --state .img2threejs/state.json
-   ```
+**Private `environment` plugin:** needs a GitHub account with access to its repository and working
+Git credentials. The public [`img2-environment`](https://www.npmjs.com/package/img2-environment)
+installer can bootstrap the harness but does not grant that access. Hermes users link each plugin
+by hand ([`docs/INSTALL.md` §3](docs/INSTALL.md#3-add-a-plugin-only-if-you-need-one)). Why a run
+cannot see an installed plugin, and how plugins reach the pipeline: [`docs/PLUGINS.md`](docs/PLUGINS.md).
+To write a plugin, follow [WRITING_A_PLUGIN.md](https://github.com/img2threejs/img2/blob/main/docs/WRITING_A_PLUGIN.md).
+
+### 4. Run a reconstruction in your agent
+
+Restart the agent (or start a new session) after installing skills.
+In Claude Code, attach an image or give its path and invoke:
+
+```text
+/img2threejs Rebuild the object in ./reference.png as a procedural Three.js model.
+Keep its proportions, silhouette and colours. Follow the quality gates.
+Report the output files, render-review evidence and any inferred regions.
+```
+
+In another host, ask the agent to use the installed `img2threejs` skill with that image.
+For a plugin workflow, name the profile explicitly, for example:
+
+```text
+Use img2threejs with the installed cs2 domain and ./reference.png.
+Follow the cs2 profile and its family-specific reconstruction and review gates.
+```
+
+```text
+Use img2threejs with the installed character plugin and ./reference.png.
+Follow the animated-character profile. Do not claim animation readiness until its rig gates pass.
+```
+
+The agent validates the image, writes an assessment and spec, generates the factory pass
+by pass, and reviews rendered comparisons. Installation alone does none of that.
+For a multi-session reconstruction, run these from the skill root:
+
+```bash
+python3 forge/state.py init --reference <image> --profile character --spec object-sculpt-spec.json
+python3 forge/next.py --state .img2threejs/state.json
+```
+
+### 5. Audit and maintain the installation
+
+```bash
+npx --yes img2threejs@latest doctor   # base-skill host/link report
+img2 doctor                         # static audit of registered plugins
+img2 update cs2 --check              # read-only check for a newer plugin version
+img2 update cs2                     # install a newer available plugin version
+img2 remove cs2                     # unlink owned links and back up the managed checkout
+```
+
+Neither doctor command proves visual likeness or animation quality; those require the
+reconstruction's render and domain gates. `img2 update --check` exits 1 when an update is
+pending, not only on errors. Local `--link` checkouts are live and are not fetched by update.
+
+Symptoms and fixes: [`docs/INSTALL.md` §6](docs/INSTALL.md#6-when-something-is-off); plugin
+audit exit codes and replacement behaviour: the
+[img2 README](https://github.com/img2threejs/img2#refs-replacement-and-common-refusals).
 
 ### Driving it harder
 
