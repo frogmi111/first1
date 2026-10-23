@@ -392,8 +392,8 @@ def analyze_mesh(
             total[2] += cross[2]
     if not live:
         return _error_result(name, "mesh has no non-degenerate triangles", vertex_count)
-    # ponytail: one global orientation; a mesh whose components are wound opposite ways needs
-    # per-component signed volumes.
+    # Known limit: one global orientation. A mesh whose components are wound opposite ways would
+    # need per-component signed volumes.
     orientation = -1.0 if signed_volume < 0.0 else 1.0
 
     # Fixed stride, never random: the same mesh must produce the same sample set every run.
